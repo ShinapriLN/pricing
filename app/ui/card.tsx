@@ -8,9 +8,9 @@ export default function Card({
   topic,
   other,
 }: {
-  className?: any;
-  contrast?: Boolean;
-  topic?: Boolean;
+  className?: string;
+  contrast?: boolean;
+  topic?: boolean;
   other: any;
 }) {
   const {
@@ -86,7 +86,8 @@ export default function Card({
           }
         )}
       >
-        Get Started<FaArrowRight />
+        Get Started
+        <FaArrowRight />
       </a>
     </div>
   );
