@@ -1,5 +1,3 @@
-"use client";
-
 import clsx from "clsx";
 import Chip from "./chip";
 import { FaArrowRight } from "react-icons/fa";
