@@ -2,6 +2,20 @@ import clsx from "clsx";
 import Chip from "./chip";
 import { FaArrowRight } from "react-icons/fa";
 
+type PricingData = {
+  id: number;
+  plan: string;
+  cost: string;
+  webnum: string;
+  serverstorage: string;
+  db: string;
+  unmeterbw: React.ReactNode;
+  ssd: string | React.ReactNode;
+  vcplus: string | React.ReactNode;
+  worldpress: string | React.ReactNode;
+  serverspeed: string | React.ReactNode;
+};
+
 export default function Card({
   className,
   contrast,
@@ -11,7 +25,7 @@ export default function Card({
   className?: string;
   contrast?: boolean;
   topic?: boolean;
-  other: any;
+  other: PricingData;
 }) {
   const {
     id,
