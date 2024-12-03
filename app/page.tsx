@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <div>
       <div className="flex flex-col gap-2 items-center p-12">
-        <div className="text-3xl font-bold  ">Pricing & Plans</div>
+        <div className="text-3xl font-bold text-center">Pricing & Plans</div>
         <div className="text-[#4D5562] flex flex-col items-center text-center xl:w-[440px]">
           Discover the plan that unlocks the transformative power of digital art
           and join our vibrant community today.
