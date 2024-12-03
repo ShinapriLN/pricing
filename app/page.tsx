@@ -74,13 +74,13 @@ export default function Home() {
     <div>
       <div className="flex flex-col gap-2 items-center p-12">
         <div className="text-3xl font-bold  ">Pricing & Plans</div>
-        <div className="text-[#4D5562] flex flex-col items-center">
-          <div>Discover the plan that unlocks the transformative power</div>
-          <div>of digital art and join our vibrant community today.</div>
+        <div className="text-[#4D5562] flex flex-col items-center text-center xl:w-[440px]">
+          Discover the plan that unlocks the transformative power of digital art
+          and join our vibrant community today.
         </div>
       </div>
 
-      <div className="m-16 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-2">
+      <div className="m-2 gap-2 grid grid-cols-2 sm:grid-cols-3 sm:m-4 lg:m-16 lg:grid-cols-4 xl:grid-cols-5">
         <Card topic other={title} />
         {tmp.map((info) =>
           info.id === 1 ? (
@@ -88,7 +88,7 @@ export default function Home() {
               key={info.id}
               other={info}
               className={clsx({
-                "hidden lg:flex": 1,
+                "hidden xl:flex": 1,
               })}
             />
           ) : info.id === 2 ? (
@@ -96,7 +96,7 @@ export default function Home() {
               key={info.id}
               other={info}
               className={clsx({
-                "hidden sm:flex": 1,
+                "hidden lg:flex": 1,
               })}
             />
           ) : info.id === 3 ? (
@@ -105,7 +105,7 @@ export default function Home() {
               contrast
               other={info}
               className={clsx({
-                "col-start-3 row-start-1 sm:col-start-3 lg:col-start-4": 1,
+                "sm:flex sm:col-start-3 xl:col-start-4 ": 1,
               })}
             />
           ) : info.id === 4 ? (
@@ -113,7 +113,7 @@ export default function Home() {
               key={info.id}
               other={info}
               className={clsx({
-                "col-start-2 row-start-1 sm:col-start-4 lg:col-start-5": 1,
+                "hidden row-start-1 col-start-2 sm:flex lg:col-start-4 xl:col-start-5": 1,
               })}
             />
           ) : (

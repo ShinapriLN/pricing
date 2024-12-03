@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://pricing-gamma-flax.vercel.app/sitemap.xml

@@ -1,6 +1,9 @@
+"use client";
+
 import clsx from "clsx";
 import Chip from "./chip";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 type PricingData = {
   id: number;
@@ -92,16 +95,22 @@ export default function Card({
       <a
         href={`#${id}`}
         className={clsx(
-          "p-6 gap-1 rounded-b-2xl w-full flex justify-center font-semibold items-center",
+          "p-6 gap-1 duration-150 rounded-b-2xl w-full flex justify-center font-semibold items-center",
           {
             "bg-yellow-800": contrast,
             "text-[#263FA9]": !contrast,
-            hidden: topic,
+            "text-white": topic,
           }
         )}
       >
-        Get Started
-        <FaArrowRight />
+        <motion.p
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 1 }}
+          className="flex items-center justify-center gap-1"
+        >
+          Get Started
+          <FaArrowRight />
+        </motion.p>
       </a>
     </div>
   );
